@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<head>
+    <meta charset="uft-8">
+    <title>Hatchi</title>
+
+</head>
+
+<body>
+    
+    <button type="button"onclick=clkme() >Click me</button>
+    <p id="ptext">This is about to change</p>
+    
+    <button type="button"onclick=adder() >Adder</button>
+    
+    <p id= "name"> My name will go here</p>
+    <img wwidth=200 height=200 id="graphic" src="/hairy5a.jpg"/>
+    
+    <button type="button"  onclick=picChange()>alpha</button>
+</body>
+<script>
+    var state = "minecraft"
+    
+    function picChange(){
+        var pic =document.getElementById("graphic")
+        var button = document.getElementById("picButton")
+        
+    if (state == "minecraft"){
+        pic.src = "/big_1465788548_image.jpg"
+        button.innerHTML = "minecraft"
+        state = "fortnite"
+    }
+    else if (state == "fortnite"){
+        pic.src ="/hairy5a.jpg"
+        button.innerHTML ="fortnite"
+        state = "overwatch"
+    }
+    else if (state == "overwatch"){
+        pic.src ="/hairy5a.jpg"
+        button.innerHTML ="overwatch"
+        state = "pokemon"
+    }
+    else if (state == "pokemon"){
+        pic.src ="/hairy5a.jpg"
+        button.innerHTML ="pokemon"
+        state = "minecraft"
+    }
+}
+    function clkme(){
+        var ptext = document.getElementById('ptext')
+        ptext.innerHTML ='OwO wats dis'
+        ptext.style.fontSize= "69px"
+        ptext.style.color= "blue"
+        ptext.style.fontFamily= "sans"
+    }
+    function adder(){
+    
+    var x = 3
+    var y = 4
+    var z = x + y
+    var ptext = document.getElementById('ptext')
+    ptext.innerHTML = "The answer is: " + z
+    alert("The answer is" + z)
+    }
+    var word = "Angel" +" " + "Toral"
+    document.getElementById("name").innerHTML = word
+    
+    var w = 7
+    if (w > 6){
+        document.getElementById("name").innerHTML = "hello"
+        
+    }
+    else{
+        document.getElementById("name").innerHTML = "bye"
+    }
+    
+</script>
+</html>
