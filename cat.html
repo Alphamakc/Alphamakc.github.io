@@ -20,12 +20,25 @@
     <button type="button"  onclick=picChange()>alpha</button>
 </body>
 <script>
-    var state = "minecraft"
+
+
+        var button2 = document.createElement('button')
+        var buttonText = document.createTextNode("Clicker")
+        button2.appendChild(buttonText)
+        document.body.appendChild(button2)
     
     function picChange(){
+        var state = "minecraft"
         var pic =document.getElementById("graphic")
         var button = document.getElementById("picButton")
         
+        function hideImg(){
+            pic.style.display="none"
+        }
+    function showImg(){
+        pic.style.display = "block"
+    }
+
     if (state == "minecraft"){
         pic.src = "/big_1465788548_image.jpg"
         button.innerHTML = "minecraft"
@@ -64,7 +77,7 @@
     alert("The answer is" + z)
     }
     var word = "Angel" +" " + "Toral"
-    document.getElementById("name").innerHTML = word
+    document.getElementById("name").innerHTML = "word"
     
     var w = 7
     if (w > 6){

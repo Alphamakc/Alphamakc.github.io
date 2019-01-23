@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hachi</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+  <div id="container">
+    <div id="leftpane">
+       <img id="graphic" src="/tavren.jpg"/> 
+</div>
+</body>
+<body>
+    <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About me</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="projects.html">Link 1</a>
+      <a href="projects2.html">Link 2</a>
+      <a href="picStory.html">Link 3</a>
+    </div>
+  </div> 
+</div>
+</body>
+<style>
+
+  body{
+    overflow: hidden;
+  }
+    #container{
+        position:absolute;
+        top:60px;
+        bottom:0px;
+        left:0px;
+        right:0px;
+        background: black
+    }
+    #leftpane{
+        width:56%;
+        height:100%;
+        background: cyan;
+        float:left;
+        
+    }
+    #rightpane{
+        width:44%;
+        height:100%;
+        background: brown;
+        float:left;
+    }
+    #buttons{
+        position:absolute;
+        bottom:50px;
+        left: 56%;
+        right: 0px;
+        height: 50px;
+        background: lime;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn{
+      margin: 40px;
+    }
+    #storytext{
+        position:absolute;
+        left: 56%;
+        right: 0px;
+        top: 0px;
+        bottom: 50px;
+        background: blue;
+        
+    }
+    #graphic{
+      max-height: 75%;
+      max-width: 75%;
+      width:75%;
+    }
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+
+
+    </div>
+    
+    <div id="rightpane">
+        <div id="storytext">
+            
+        </div>
+        
+        <div id="buttons">
+            <button type="button1" onclick="buttonclick(1)" class="btn btn-primary">yes</button>
+            <button type="button2" onclick="buttonclick(2)" class="btn btn-primary">no</button>
+            <button type="button3" onclick="buttonclick(3)" class="btn btn-primary">cat</button>
+            <button type="button4" onclick="buttonclick(4)" class="btn btn-primary">maybe</button>
+    </div>
+      <script>
+      var graphic =document.getElementById("graphic")
+      var text= document.getElementById("text")
+      var button1= document.getElementById("button1")
+      var button2= document.getElementById("button2")
+      var button3= document.getElementById("button3")
+      var button4= document.getElementById("button4")
+      var state ="intro"
+      
+      function intro(){
+        text.innerHTML = "cats are cute"
+        button1.innerHTML= "Yes"
+        button1.style.display = "none"
+        button2.innerHTML ="No"
+        button2.style.display = "none"
+        button3.innerHTML = "Cat"
+        button3.style.display ="none"
+        button4.innerHTML ="Maybe"
+        button4.style.display ="none"
+        graphic.src ="/hairy5a.jpg"
+      }
+      function park(){
+        text.innerHTML = "oh look a cat"
+        button1.innerHTML= "Yes"
+        button1.style.display = "none"
+        button2.innerHTML ="No"
+        button2.style.display = "none"
+        button3.innerHTML = "Cat"
+        button3.style.display ="block"
+        button4.innerHTML ="Maybe"
+        button4.style.display ="block"
+        graphic.src ="/catandtiredEDIT.jpg"
+      }
+      function ally(){
+         text.innerHTML = "What did you do"
+        button1.innerHTML= "Yes"
+        button1.style.display = "none"
+        button2.innerHTML ="No"
+        button2.style.display = "none"
+        button3.innerHTML = "Cat"
+        button3.style.display ="block"
+        button4.innerHTML ="Maybe"
+        button4.style.display ="block"
+        graphic.src ="/maxresdefault.jpg"
+      }
+      
+      function buttonclick(button){
+        if(state== "intro"){
+        if (button==1){
+          state ="park"
+          park()
+        }
+        else if
+        if(state== "intro")
+        if (button==2){
+          state ="alley"
+          intro()
+           }                                                                 
+        }
+        else if(state== "park"){
+          //button checks
+        }
+        else if (state =="alley"){
+          //button checks
+        }
+       }
+    </script>
+    </div>
+  
+
+
