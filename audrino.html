@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="">Angel Toral</a>
+  <a href="index.html">Home</a>
+  <a href="aboutme.html">About me</a>
+  <a href="resume.html">Resume</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="projects.html">project 1: Hangman</a>
+      <a href="projects2.html">project 2: Text Adventure</a>
+      <a href="picStory.html">project 3: (doesn't work)</a>
+      <a href="historyQuiz.html">project 4: History Quiz</a>
+      <a href="audrino.html">project 5: Audrino Borad</a>
+    </div>
+  </div> 
+</div>
+<table>
+  <tr>
+    <td><video width="450" height="500" controls><source src="AudVid.MOV" type="video/mp4"></video></td>
+    <td>Responce</td>
+    <td>-</td>
+    <td>Me and my partner Angel P., have created a piano. It uses 20+ wireds, 1 buzzer, and 7 buttons. 
+    It works just like a regular toy piano, the code has been set for each of the buttons to make a different 
+    sound, making a deeper sound from left to right. The few problems that we ran into was the buttons not working 
+    and putting wires in the wrong spot. In the end everything worked perfectly and works just like a toy piano.</td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td>Video Narration</td>
+    <td>-</td>
+    <td>In the video I demonstrate how the buttons work and how the wires are connected.
+    I also show that the buttons work in a perfect order and sound like a toy piano. 
+    I appologise in advance for the video being bad quality.</td>
+  </tr>
+</table>
+<p>Code download here</p>
+<a href="Audr.ino" download="Audr.ino">Download Arduino Project</a>
